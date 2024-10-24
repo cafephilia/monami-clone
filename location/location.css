@@ -1,0 +1,43 @@
+@import url('reset.css');
+
+* {
+    box-sizing: border-box;
+}
+
+/* header */
+/* end header */
+
+/* main */
+main {
+    display: flex;
+    width: 100%;
+}
+main section.page-title {
+    height: 300px;
+    width: 100%;
+    background: url('https://www.monami.com/images/page/page_visual1.jpg') no-repeat center/cover;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+main section.page-title .intro {
+    border: 1px solid white;
+    color: white;
+    text-align: center;
+}
+main section.page-title .intro h2 {
+    font-size: 2rem;
+}
+main section.page-title .intro p {
+    font-size: 1rem;
+}
+main section.page-tabs {
+
+}
+main section.contact {
+
+}
+/* end main */
+
+/* footer */
+/* end footer */
