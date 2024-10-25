@@ -36,7 +36,6 @@ main .mainhead h2 p{
   font-weight: 300;
 }
 main .pagetab{
-  position: relative;
   max-width: 1400px;
   width: 100%;
   margin: -29px auto 85px;
@@ -96,7 +95,7 @@ main .industry h4 span{
   font-size: 20px;
   line-height: 29px;
 }
-main .industry .content1 p{
+main .industry p{
   font-size: 16px;
   line-height: 180%;
   margin-bottom: 40px;
@@ -107,7 +106,17 @@ main .industry .content1 .content1bg{
   background: url("https://www.monami.com/images/page/industry_img_1.jpg") no-repeat;
   background-size: 100% 100%;
   align-content: center;
-  margin-bottom: 30px;  
+  margin-bottom: 30px; 
+}
+.bgarea1{
+  display: block;
+  top: 1050px;
+  width: 100%;
+  height: 1100px;
+  background: #f8f8f8;
+  position: absolute;
+  z-index: -1;
+  margin-bottom: 0;
 }
 main .industry .content1 ul{
   width: 500px;
@@ -145,3 +154,91 @@ main .industry .content1 ul li .icon3{
   background-position: -87px;
 }
 /* 컨텐츠2 */
+main .industry .process{
+  width: 100%;
+  font-size: 14px;
+  color: #333;
+  display: block;
+}
+main .industry .process ol{
+  height: 540px;
+  margin: 100px 0 0 2px;
+  position: relative;
+}
+main .industry .process ol li{
+  height: 217px;
+  min-width: 300px;
+  position: absolute;
+  line-height: 180%;
+}
+main .industry .process ol li span{
+  display: block;
+  position: absolute;
+}
+main .industry .process ol li:nth-child(odd){
+  top: 0;
+  background: url("https://www.monami.com/images/page/industry_line_1.png") no-repeat;
+  background-position: left bottom;
+}
+main .industry .process ol li:nth-child(even){
+  top: 210px;
+}
+
+body main .industry .process ol li span.num{
+  top: 0;
+  left: -8px;
+  font-size: 24px;
+  color: #c40f39;
+  font-family: 'Montserrat',sans-serif;
+
+}
+body main .industry .process ol li span.tit{
+  top: 48px;
+  left: 20px;
+  font-size: 17px;
+  color: #000;
+  font-weight: 600;
+
+}
+body main .industry .process ol li span.con{
+  top: 80px;
+  left: 20px;
+  font-size: 14px;
+  color: #777;
+  line-height: 20px;
+}
+main .industry .process ol .process2{
+  left: 171px;
+}
+main .industry .process ol .process3{
+  left: calc(171px + (175px*1));
+}
+main .industry .process ol .process4{
+  left: calc(171px + (175px*2));
+}
+main .industry .process ol .process5{
+  left: calc(171px + (175px*3));
+}
+main .industry .process ol .process6{
+  left: calc(171px + (175px*4));
+}
+main .industry .process ol .process7{
+  left: calc(171px + (175px*5));
+}
+main .industry .process ol .process8{
+  left: calc(171px + (175px*6));
+}
+main .industry .process a{
+  display: inline-block;
+  width: 237px;
+  height: 64px;
+  line-height: 66px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #3f3f3f;
+  text-align: center;
+  border: 1px solid #b7b7b7;
+  background: #fff;
+  margin-left: 50%;
+  transform: translate(-50%,-100%);
+}
