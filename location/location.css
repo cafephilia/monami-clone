@@ -10,8 +10,10 @@
 /* main */
 main {
     display: flex;
+    flex-direction: column;
     width: 100%;
 }
+/* section.page-title */
 main section.page-title {
     height: 300px;
     width: 100%;
@@ -31,12 +33,76 @@ main section.page-title .intro h2 {
 main section.page-title .intro p {
     font-size: 1rem;
 }
+/* end section.page-title */
+
+/* section.page-tabs */
 main section.page-tabs {
-
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
+main section.page-tabs ul {
+    text-align: center;
+    font-size: 1rem;
+    align-items: center;
+    display: flex;
+}
+main section.page-tabs ul li {
+    width: 200px;
+    height: 70px;
+    border: 1px solid lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main section.page-tabs ul li {
+    width: 200px;
+    height: 70px;
+    border: 1px solid lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* end section.page-tabs */
+
+/* section.contact */
 main section.contact {
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
+main section.contact h2 {
+    margin: 80px auto;
+    font-size: 2.5rem;
+}
+main section.contact .contact-info {
+    width: 1400px;
+    height: 600px;
+    /* border 겹치는 줄 수정 필요  */
+    border: 1px solid lightgray;
+    display: flex;
+}
+main section.contact .contact-info .map {
+    width: 900px;
+    height: 600px;
+    border: 1px solid lightgray;
+    background: url("map_image.png") no-repeat center/cover;
+}
+main section.contact .contact-info .info-text{
+    width: 500px;
+    height: 600px;
+    border: 1px solid lightgray;
+    background: url('https://www.monami.com/images/page/location_img1.jpg') no-repeat center/cover;
+}
+main section.contact .traffic {    
+    width: 1400px;
+    height: 250px;
+    border: 1px solid lightgray;
+    margin-top: 30px;
+}
+/* end section.contact */
 /* end main */
 
 /* footer */
