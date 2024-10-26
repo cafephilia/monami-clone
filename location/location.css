@@ -3,6 +3,7 @@
 * {
     box-sizing: border-box;
     line-height: 1.5;
+    font-family: "Noto Sans KR", "돋움", dotum, sans-serif;
 }
 
 /* header */
@@ -13,10 +14,12 @@ main {
     display: flex;
     flex-direction: column;
     width: 100%;
+    background: white;
+    position: relative;
 }
 /* section.page-title */
 main section.page-title {
-    height: 300px;
+    height: 342px;
     width: 100%;
     background: url('https://www.monami.com/images/page/page_visual1.jpg') no-repeat center/cover;
     justify-content: center;
@@ -28,49 +31,56 @@ main section.page-title .intro {
     text-align: center;
 }
 main section.page-title .intro h2 {
-    font-size: 2rem;
+    font-size: 2.1rem;
+    font-weight: 500;
 }
 main section.page-title .intro h2::after {
     display: block;
     content: "";
-    width: 25px;
-    height: 3px;
-    margin: 10px auto;
-    background: red;
+    width: 30px;
+    height: 4px;
+    margin: 5px auto;
+    background: #c40f39;
 }
 main section.page-title .intro p {
-    font-size: 1rem;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    font-weight: 300;
 }
 /* end section.page-title */
 
 /* section.page-tabs */
 main section.page-tabs {
-    height: 70px;
+    height: 58px;
     width: 100%;
     display: flex;
     justify-content: center;
+    transform: translateY(-50%); /* 본인 높이의 절반만큼 위로 이동 */    
 }
 main section.page-tabs ul {
     text-align: center;
     font-size: 1rem;
     align-items: center;
     display: flex;
+    background: white;
 }
 main section.page-tabs ul li {
-    width: 200px;
-    height: 70px;
-    border: 1px solid lightgray;
+    font-size: 0.95rem;
+    color: #666;
+    width: 170px;
+    height: 58px;
     display: flex;
     align-items: center;
     justify-content: center;
+    border-bottom: 1px solid #ddd;
+    border-left: 1px solid #ddd;    
 }
-main section.page-tabs ul li {
-    width: 200px;
-    height: 70px;
-    border: 1px solid lightgray;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+main section.page-tabs ul li:nth-child(7) {
+    background: #c40f39;
+    color: white;
+}
+main section.page-tabs ul li:last-child {
+    border-right: 1px solid #ddd;  
 }
 /* end section.page-tabs */
 
@@ -83,18 +93,23 @@ main section.contact {
 }
 main section.contact>h2 {
     margin: 80px auto;
-    font-size: 2.5rem;
-    font-weight: 700;
+    font-size: 2.3rem;
+    font-weight: 600;
     width: 100%;
     text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2px;
+}
+main section.contact>h2>span {
+    color: #c40f39;
 }
 main section.contact>h2::after {
     display: block;
     content: "";
-    width: 25px;
-    height: 3px;
-    margin: 15px auto 35px;
-    background: red;
+    width: 30px;
+    height: 4px;
+    margin: 5px auto 35px;
+    background: #c40f39;
 }
 main section.contact .contact-info {
     width: 1400px;
@@ -106,53 +121,53 @@ main section.contact .contact-info {
 main section.contact .contact-info .map {
     width: 900px;
     height: 600px;
-    border: 1px solid lightgray;
+    border: 1px solid #ddd;
     background: url("map_image.png") no-repeat center/cover;
 }
 main section.contact .contact-info .info {
-    width: 500px;
+    width: 520px;
     height: 600px;
     border: 1px solid lightgray;
     position: relative;
-    background: black;
+    background: #363636;
     color: white;
 }
 main section.contact .contact-info .info .info-text {
-    padding-left: 40px;
+    padding-left: 50px;
 }
 main section.contact .contact-info .info .info-text .info-title {
     margin: 60px auto 5px;
 }
-main section.contact .contact-info .info .info-text .info-title h2 {
-    font-size: 3rem;
-}
 main section.contact .contact-info .info .info-text .info-title h3 {
     margin-top: 5px;
     font-size: 1.5rem;
+    font-weight: 300;
 }
 main section.contact .contact-info .info .info-text .info-title h3::after {
     display: block;
     content: "";
     width: 25px;
     height: 3px;
-    margin: 15px 0 35px;
+    margin: 10px 0 35px;
     background: #fff;
 }
 main section.contact .contact-info .info .info-text ul {
     font-size: 0.95rem;
     margin: 40px auto;
+    line-height: 1.8;
 }
 main section.contact .contact-info .info .info-text ul li {
     display: flex;
 }
 main section.contact .contact-info .info .info-text ul li em {
-    font-weight: 600;
+    font-weight: 400;
     width: 90px;
 }
 main section.contact .contact-info .info .info-text ul li p {
+    font-weight: 300;
     width: 300px;
 }
-main section.contact .contact-info .info img {
+main section.contact .contact-info .info #head-office img {
     position: absolute;
     bottom: 0px;
     right: 0px;
@@ -160,24 +175,26 @@ main section.contact .contact-info .info img {
 main section.contact .traffic {    
     width: 1400px;
     height: 250px;
-    border: 1px solid lightgray;
-    margin-top: 30px;
+    border: 1px solid #ddd;
+    margin-top: 20px;
     display: flex;
+    margin-bottom: 160px;
 }
 main section.contact .traffic .box {   
     width: 50%; 
-    border-right: 1px solid lightgray;
+    border-right: 1px solid #ddd;
     display: flex;
-    align-items: center;
     justify-content: center;
 }
 main section.contact .traffic .box .method {    
-    height: 100px;
-    width: 100px;
-    border: 1px solid black;
+    height: 120px;
+    width: 110px;
+    /* 경계선 확인용도 */
+    /* border: 1px solid black; */
     position: relative;  
-    text-align: center;
-    margin: 0px 50px;
+    display: flex;
+    justify-content: center;
+    margin-right: 50px;
 }
 main section.contact .traffic #car .method {
     background: url("https://www.monami.com/images/page/location_bg1.gif") no-repeat center;
@@ -185,17 +202,38 @@ main section.contact .traffic #car .method {
 main section.contact .traffic #public-trp .method {  
     background: url("https://www.monami.com/images/page/location_bg2.gif") no-repeat center;
 }
-main section.contact .traffic .method p {  
+main section.contact .traffic .method p { 
     position: absolute;
     bottom: 0px;
-    font-size: 0.9rem;
-    color: red;
-    font-weight: 600;
+    font-size: 0.95rem;
+    color: #c40f39;
+    font-weight: 500;
 }
 main section.contact .traffic .guide-text {  
-    border: 1px solid #000;
-    width: 420px;
+    /* 경계선 확인용도 */
+    /* border: 1px solid #000; */
+    width: 430px;
+    height: auto;
+    color: #777;
+    font-size: 0.9rem;
+    line-height: 1.8;
+    padding-top: 30px;
 }
+main section.contact .traffic .guide-text ul li {  
+    padding-left: 15px;
+    display: flex;
+    background: url("https://www.monami.com/images/page/list_bg1.gif") no-repeat left 11px;
+}
+main #btn-top {  
+    position: fixed;
+    right: 3%;
+    bottom: 30%;
+    z-index: 100;
+}
+main #btn-top img {  
+    border: 2px solid #c40f39;
+}
+
 
 /* end section.contact */
 /* end main */

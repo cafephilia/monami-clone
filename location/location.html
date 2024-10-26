@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MONAMI</title>
     <link rel="stylesheet" href="location.css">
+    <!-- Noto Sans Kr font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Montserrat font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
     <!-- favicon 추가 필요 -->
 </head>
 <body>
@@ -29,14 +37,16 @@
             </ul>
         </section>
         <section class="contact">
-            <h2>MONAMI CONTACT</h2>
+            <h2>MONAMI <span>CONTACT</span></h2>
             <div class="contact-info">
                 <div class="map">
                 </div>
                 <div class="info">
                     <div class="info-text">
                         <div class="info-title">
-                            <h2>monami</h2>
+                            <div class="brand-logo">
+                                <img src="https://www.monami.com/images/page/location_logo.jpg" alt="브랜드로고">            
+                            </div>
                             <h3>모나미 본사 오시는 길</h3>
                         </div>
                         <ul>
@@ -55,26 +65,41 @@
                     <div class="method">
                         <p>자가용 이용 시</p>                        
                     </div>
-                    <p class="guide-text">
-                        판교IC를 빠져 나와 '수지/신갈' 방향으로 오시면 됩니다.
-                    </p>
+                    <div class="guide-text">                        
+                        <ul>
+                            <li>                                
+                                판교IC를 빠져 나와 '수지/신갈' 방향으로 오시면 됩니다.
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="box" id="public-trp">
                     <div class="method">
-                        <p>자가용 이용 시</p>  
+                        <p>대중교통 이용 시</p>  
                     </div>
-                    <p class="guide-text">
-                        지하철 : 신분당선 동천역 2번 출구 도보 10분 거리
-                        일반버스 :
-                        분당선 미금역 7번 출구에서 버스 11번을 이용, 프레시원 정거장 하차
-                        또는 700-2번, 5번을 이용, KT 수지지사.물류센터 정거장 하차
-                        광역버스 :
-                        M4101번 (종로,을지로,남대문→동천동 현대홈타운2차아파트 정거장 하차)
-                        6900번(잠실→동천동 현대홈타운2차아파트 정거장 하차)
-                    </p>
+                    <div class="guide-text">
+                        <ul>
+                            <li>
+                                지하철 : 신분당선 동천역 2번 출구 도보 10분 거리
+                            </li>
+                            <li>
+                                일반버스 : <br>
+                                분당선 미금역 7번 출구에서 버스 11번을 이용, 프레시원 정거장 하차
+                                또는 700-2번, 5번을 이용, KT 수지지사.물류센터 정거장 하차
+                            </li>
+                            <li>
+                                광역버스 : <br>
+                                M4101번 (종로,을지로,남대문→동천동 현대홈타운2차아파트 정거장 하차)
+                                6900번(잠실→동천동 현대홈타운2차아파트 정거장 하차)
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
+        <a id="btn-top" href="#">
+            <img src="https://www.monami.com/images/common/btn_top.gif" alt="맨위로">
+        </a>
     </main>
     <footer></footer>
 </body>
