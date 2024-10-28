@@ -54,7 +54,7 @@ footer .f-top .btm-menu ul li:nth-child(2) a {
 footer .f-btm {
   padding-top: 10px;
   display: flex;
-  background: skyblue;
+  /* background: skyblue; */
   width: 75%;
   margin: 0 auto;
 }
@@ -124,8 +124,8 @@ footer .f-btm .customer-center a::after {
   display: inline-block; /* inline-block으로 설정하여 배경이 보이도록 함 */
 }
 footer .f-btm .family-site { 
-  background: green;
-  /* background: url("https://www.monami.com/images/common/family_arr.png") no-repeat 95% center; */
+  /* background: green; */
+  background: url("https://www.monami.com/images/common/family_arr.png") no-repeat 95% center;
   border: 1px solid rgba(255, 255, 255, 0.4);
   width: 242px;
   height: 34px;
