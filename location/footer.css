@@ -1,0 +1,143 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+KR:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  line-height: 1.5;
+  font-family: "Noto Sans KR", "돋움", dotum, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5;
+  font-family: "Noto Sans KR", "돋움", dotum, sans-serif;
+}
+footer {
+  background: #111;
+  padding: 60px 0 65px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+footer .f-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background: greenyellow; */
+  width: 75%;
+  margin: 0 auto;
+  border-bottom: 1px solid  rgba(255, 255, 255, 0.1);
+  padding-bottom: 20px;
+}
+footer .f-top h1 {
+
+}
+footer .f-top .btm-menu ul {
+  display: flex;
+}
+footer .f-top .btm-menu ul li {
+  margin-right: 10px;
+  background: url('https://www.monami.com/images/common/fm_bar.gif') no-repeat right center; 
+}
+footer .f-top .btm-menu ul li a {
+  margin-right: 10px;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.85rem;
+  text-decoration: none;
+}
+footer .f-top .btm-menu ul li:nth-child(2) a {
+  color: #fff;
+}
+
+footer .f-btm {
+  padding-top: 10px;
+  display: flex;
+  background: skyblue;
+  width: 75%;
+  margin: 0 auto;
+}
+footer .f-btm:last-child {
+  display: flex;
+  justify-content: flex-end;
+}
+footer .f-btm .info {
+  width: 40%;
+  background: orange;
+}
+footer .f-btm .info h2 {
+  font-size: 0.95rem;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 10px;
+}
+footer .f-btm .info p { 
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 0.85rem;
+}
+footer .f-btm .info p span { 
+  margin: 0px 10px;
+}
+
+footer .f-btm .customer-center { 
+  width: 40%;
+  background: red;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 50px;
+}
+footer .f-btm .customer-center h2 { 
+  font-size: 0.95rem;
+  font-family: 'Montserrat', sans-serif;
+  margin: 2px 0;
+}
+footer .f-btm .customer-center p { 
+  font-size: 1.5rem;
+  font-family: 'Montserrat', sans-serif;
+  color: rgba(255, 255, 255, 0.5);
+  margin: 2px 0;
+}
+footer .f-btm .customer-center a { 
+  display: inline-flex;
+  border: 1px solid #878787;
+  font-size: 0.8rem;
+  color: #dfdfdf;
+  background: #4a4a4a;
+  border-radius: 6px;
+  text-decoration: none;
+
+  width: 155px;
+  height: 32px;
+  line-height: 31px;
+  text-align: center;
+  margin: 5px 0;
+  justify-content: center;
+  align-items: center;
+}
+footer .f-btm .customer-center a::after { 
+  content: "";
+  background: url('https://www.monami.com/images/common/family_arr.png') no-repeat center;
+  transform: rotate(-450deg);
+  width: 20px; /* 원하는 너비 설정 */
+  height: 20px; /* 원하는 높이 설정 */
+  display: inline-block; /* inline-block으로 설정하여 배경이 보이도록 함 */
+}
+footer .f-btm .family-site { 
+  background: green;
+  /* background: url("https://www.monami.com/images/common/family_arr.png") no-repeat 95% center; */
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  width: 242px;
+  height: 34px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 10px;
+}
+footer .f-btm .family-site a { 
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.4);
+  text-decoration: none;    
+}
+
