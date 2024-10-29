@@ -4,11 +4,199 @@
 body{
   font-family:"Noto Sans KR", "돋움", sans-serif;;
 }
-body .placeholder{
-  background: lightcyan;
+/* =======header============ */
+body header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  z-index: 1000;
+}
+header .head{
+  border-bottom: 1px solid #eaeaea;
+}
+.head_top{
+  height: 58px;
+  border-bottom: 1px solid #eaeaea;
+}
+.conwrap{
+  min-width: 1400px;
+  width: 94%;
+  margin: 0 auto;
+  position: relative;
+}
+.head_top .links{
+  overflow: hidden;
+  float: left;
+  margin-top: 14px;
+}
+.head_top .links .lang{
+  position: absolute;
+  left: 0;
+  top: 14px;
+  z-index: 100;
+  float: left;
+  width: 86px;
+  height: 30px;
+  padding-top: 7px;
+  overflow: hidden;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+}
+.head_top .links .lang .this_lang{
+  padding-left: 15px;
+  background: url("https://www.monami.com/images/common/lang_kor.gif") no-repeat 10px center;
+}
+.head_top .links .lang a{
+  display: block;
+  width: 52px;
+  padding-left: 15px;
+  font-family: 'Montserrat',sans-serif;
+  font-size: 11px;
+  color: #000;
+  background: url("https://www.monami.com/images/common/lang_arr.gif") no-repeat right center;
+}
+.head_top .links .sns{
+  float: left;
+  padding-left: 93px;
+}
+
+.head_top .links .sns ul{
+  overflow: hidden;
+}
+.head_top .links .sns ul li{
+  float: left;
+  margin-left: 7px;
+}
+.topmenu{
+  float: right;
+  margin-top: 20px;
+}
+.topmenu ul{
+  overflow: hidden;
+}
+.topmenu ul li:nth-child(1){
+  background: 0;
+}
+.topmenu ul li{
+  float: left;
+  margin-left: 10px;
+  padding-left: 12px;
+  background: url("https://www.monami.com/images/common/tm_bar.gif") no-repeat left center;
+}
+.topmenu ul li a{
+  font-family: 'Montserrat',sans-serif;
+  font-size: 11px;
+  color: #9b9a9a;
+}
+.conwrap::after{
+  display: block;
+  content: "";
+  clear: both;
+}
+.head .gnb{
+  min-width: 1262px;
+  margin: 0 auto;
+}
+.head .gnb h1{
+  float: none;
+  width: 162px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.head .gnb .nav{
+  float: none;
+  margin: 0 auto;
+  width: calc(100% - 162px - 66px);
+  display: flex;
+  justify-content: space-between;
+  
+}
+.head .gnb .nav>ul{
+  position: relative;
+  text-align: center;
   width: 100%;
-  height: 50px;
-  gz: 30px;
+  
+}
+.head .gnb .nav>ul:before{
+  content: "";
+  width: calc(100% + 450px + 450px);
+  height: 425px;
+  position: absolute;
+  left: -450px;
+  top: 89px;
+  visibility: hidden;
+  opacity: 0;
+  background: rgba(255,255,255,0.95);
+  border-bottom: 1px solid #e8e8e8;
+  border-top: 1px solid #e8e8e8;
+}
+.head .gnb .nav>ul li{
+  display: inline-block;
+  vertical-align: top;
+  width: calc(100%/7);
+  height: 89px;
+  line-height: 89px;
+  font-size: 17px;
+  color: #303030;
+  position: relative;
+}
+.head .gnb .nav>ul li>a{
+  display: block;
+  height: 89px;
+  line-height: 89px;
+  font-size: 17px;
+  color: #303030;
+}
+.head .gnb .search{
+  float: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 162px;
+}
+.head .gnb .search .btn_all{
+  float: right;
+  overflow: hidden;
+  width: 19px;
+  height: 16px;
+  margin-top: 36px;
+  cursor: pointer;
+}
+.head .gnb .search .btn_all>div{
+  width: 100%;
+  height: 2px;
+  margin-bottom: 5px;
+  background: #303030;
+}
+.head .gnb .search .nav_search{
+  overflow: hidden;
+  float: right;
+  text-align: right;
+  margin-right: 18px;
+  margin-top: 36px;
+}
+.head .gnb .search .nav_search a{
+  float: right;
+}
+.head .gnb .search .nav_search input{
+  float: right;
+  width: 0;
+  border: 0;
+  outline: 0;
+  margin-left: 10px;
+}
+
+
+
+
+
+
+/* =========main================== */
+main{
+  margin-top: 148px;
 }
 main .mainhead{
   color: white;
@@ -333,16 +521,193 @@ main .industry .process a{
     padding-left: 3px;
     background-position: right bottom !important;
   }
-  main .content3 li:nth-child(1)>div{
+  main .content3 .bigsize li:nth-child(1)>div{
     background: url("https://www.monami.com/images/page/industry_prd_big_1.png") no-repeat;
   }
-  main .content3 li:nth-child(2)>div{
+  main .content3 .bigsize li:nth-child(2)>div{
     background: url("https://www.monami.com/images/page/industry_prd_big_2.png") no-repeat;
   }
-  main .content3 li:nth-child(3)>div{
+  main .content3 .bigsize li:nth-child(3)>div{
     
     background: url("https://www.monami.com/images/page/industry_prd_big_3.png") no-repeat;
   }
-  main .content3 li:nth-child(4)>div{
+  main .content3 .bigsize li:nth-child(4)>div{
     background: url("https://www.monami.com/images/page/industry_prd_big_4.png")   no-repeat;
   }
+  main .content3 .smallsize{
+    margin-top: 100px;
+  }
+  main .content3 .smallsize>li{
+    width: 438px;
+    height: 498px;
+    border: 1px solid #dadada;
+    margin: 0 0 40px 36px;
+  }
+  main .content3 .smallsize>li>a img{
+    width: 438px;
+    height: 360px;
+  }
+  main .content3 .smallsize>li:nth-child(1){
+    margin: 0 0 40px 0;
+  }
+  main .content3 .smallsize>li:nth-child(4){
+    margin: 0 0 40px 0;
+  }
+    main .content3 .smallsize>li>div{
+      width: calc(100%-100px);
+      padding: 30px 50px;
+    }
+    main .content3 .smallsize>li h5{
+      font-size: 16px;
+      font-weight: 600;
+      color: #000;
+      line-height: 30px;
+    }
+    main .content3 .smallsize>li span{
+      font-size: 13px;
+      color: #dbdbdb;
+      display: block;
+    }
+    .content3 ul li{
+      display: inline-block;
+      vertical-align: top;
+    }
+    /* ========= footer ================== */
+    footer{
+      width: 100%;
+      position: relative;
+      background: #111;
+      padding: 60px 0 65px;
+    }
+    .foot{
+      max-width: 1400px;
+      width: 94%;
+      margin: 0 auto;
+      padding: 0 3%;
+    }
+    .foot_top{
+      width: 100%;
+      padding-bottom: 25px;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+    .foot_top h1{
+      float: left;
+    }
+    .foot_top .fm{
+    float: right;
+    overflow: hidden;
+    }
+    .foot_top .fm>li{
+      color: rgba(255,255,255,0.5);
+      float: left;
+      padding-right: 11px;
+      margin-right: 10px;
+      background: url("https://www.monami.com/images/common/fm_bar.gif") no-repeat right center;
+    }
+    .foot_top .fm>li:nth-child(2){
+      color: white;
+    }
+.foot_top::after{
+  display: block;
+  content:"";
+  clear: both;
+}
+.foot_btm{
+  width: 100%;
+  padding-top: 20px;
+}
+.foot_btm .cc{
+  display: inline-block;
+
+}
+.foot_btm .info{
+  display: inline-block;
+
+  float: left;
+  margin-right: 55px;
+}
+.foot_btm .tit{
+  font-family: 'Montserrat',sans-serif;
+  font-size: 15px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.foot_btm .info address{
+  font-size: 14px;
+  font-weight: 300;
+  color: rgba(255,255,255,0.3);
+  margin-bottom: 10px;
+}
+.foot_btm .info .copy{
+  font-size: 12px;
+  font-weight: 300;
+  color: rgba(255,255,255,0.3);
+}
+.foot_btm .cc .cc_tel{
+  font-family: 'Montserrat',sans-serif;
+  font-size: 24px;
+  color: rgba(255,255,255,0.5);
+}
+.foot_btm .btn_kakao{
+  display: inline-block;
+  width: 155px;
+  height: 32px;
+  margin-top: 15px;
+  color: #dfdfdf;
+  text-align: center;
+  border: 1px solid #878787;
+  background: #4a4a4a;
+  border-radius: 6px;
+  align-content: center;
+}
+.foot_btm .btn_kakao::after{
+  display: inline-block;
+  content: "";
+  width: 9px;
+  height: 5px;
+  margin: 0 0 2px 5px;
+  background: url("https://www.monami.com/images/common/family_arr.png") no-repeat;
+  background-size: cover;
+  transform: rotate(-450deg);
+}
+.foot_btm .fam_site{
+  float: right;
+  position: relative;
+  width: 242px;
+  height: 34px;
+  text-align: left;
+  border: 1px solid rgba(255,255,255,0.3);
+  border-radius: 5px;
+}
+.foot_btm .fam_site>a{
+  display: block;
+  padding: 0 13px;
+  height: 34px;
+  line-height: 34px;
+  font-size: 13px;
+  color: rgba(255,255,255,0.4);
+  position: relative;
+}
+.foot_btm .fam_site::after{
+  display: block;
+  content: "";
+  width: 9px;
+  height: 5px;
+  margin: 0 0 2px 5px;
+  background: url("https://www.monami.com/images/common/family_arr.png") no-repeat;
+  background-size: contain;
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%) rotate(180deg);
+}
+.foot_btm::after{
+  display: block;
+  content: "";
+  clear: both;
+}
+.foot::after{
+  display: block;
+  content: "";
+  clear: both;
+} 
