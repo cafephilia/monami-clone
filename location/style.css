@@ -480,19 +480,31 @@ footer {
   }
   footer .f-btm .family-site { 
     /* background: green; */
-    background: url("https://www.monami.com/images/common/family_arr.png") no-repeat 95% center;
     border: 1px solid rgba(255, 255, 255, 0.4);
     width: 242px;
     height: 34px;
     border-radius: 5px;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
     padding-left: 10px;
+    position: relative;
   }
   footer .f-btm .family-site a { 
+    display: flex;
     font-size: 0.85rem;
     color: rgba(255, 255, 255, 0.4);
     text-decoration: none;    
+  }
+  footer .f-btm .family-site a::after { 
+    color: rgba(255, 255, 255, 0.4);
+    display: block;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: url("https://www.monami.com/images/common/family_arr.png") no-repeat center;
+    position: absolute;
+    right: 3%;
+    bottom: 20%;
+    transform: scaleY(-1);
   }
 /* end footer */
