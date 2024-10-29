@@ -4,12 +4,97 @@
 body{
   font-family:"Noto Sans KR", "돋움", sans-serif;;
 }
-body .placeholder{
-  background: lightcyan;
-  width: 100%;
-  height: 50px;
-  gz: 30px;
+/* =======header============ */
+body header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
 }
+header .head{
+  border-bottom: 1px solid #eaeaea;
+}
+.head_top{
+  height: 58px;
+  border-bottom: 1px solid #eaeaea;
+}
+.head_top .conwrap{
+  min-width: 1400px;
+  width: 94%;
+  margin: 0 auto;
+  position: relative;
+}
+.head_top .links{
+  overflow: hidden;
+  float: left;
+  margin-top: 14px;
+}
+.head_top .links .lang{
+  position: absolute;
+  left: 0;
+  top: 14px;
+  z-index: 100;
+  float: left;
+  width: 86px;
+  height: 21px;
+  padding-top: 7px;
+  overflow: hidden;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+}
+.head_top .links .lang .this_lang{
+  padding-left: 15px;
+  background: url("https://www.monami.com/images/common/lang_kor.gif") no-repeat 10px center;
+}
+.head_top .links .lang a{
+  display: block;
+  width: 38px;
+  padding-left: 15px;
+  font-family: 'Montserrat',sans-serif;
+  color: #000;
+  background: url("https://www.monami.com/images/common/lang_arr.gif") no-repeat right center;
+}
+.head_top .links .sns{
+  float: left;
+  padding-left: 93px;
+}
+
+.head_top .links .sns ul{
+  overflow: hidden;
+}
+.head_top .links .sns ul li{
+  float: left;
+  margin-left: 7px;
+}
+.topmenu{
+  float: right;
+  margin-top: 20px;
+}
+.topmenu ul{
+  overflow: hidden;
+}
+.topmenu ul li:nth-child(1){
+  background: 0;
+}
+.topmenu ul li{
+  float: left;
+  margin-left: 10px;
+  padding-left: 12px;
+  background: url("https://www.monami.com/images/common/tm_bar.gif") no-repeat left center;
+}
+.topmenu ul li a{
+  font-family: 'Montserrat',sans-serif;
+  font-size: 11px;
+  color: #9b9a9a;
+}
+.conwrap::after{
+  display: block;
+  content: "";
+  clear: both;
+}
+
+/* =========main================== */
 main .mainhead{
   color: white;
   width: 100%;
@@ -384,7 +469,7 @@ main .industry .process a{
       display: inline-block;
       vertical-align: top;
     }
-    /* footer */
+    /* ========= footer ================== */
     footer{
       width: 100%;
       position: relative;
@@ -416,6 +501,9 @@ main .industry .process a{
       margin-right: 10px;
       background: url("https://www.monami.com/images/common/fm_bar.gif") no-repeat right center;
     }
+    .foot_top .fm>li:nth-child(2){
+      color: white;
+    }
 .foot_top::after{
   display: block;
   content:"";
@@ -425,7 +513,13 @@ main .industry .process a{
   width: 100%;
   padding-top: 20px;
 }
+.foot_btm .cc{
+  display: inline-block;
+
+}
 .foot_btm .info{
+  display: inline-block;
+
   float: left;
   margin-right: 55px;
 }
@@ -446,3 +540,71 @@ main .industry .process a{
   font-weight: 300;
   color: rgba(255,255,255,0.3);
 }
+.foot_btm .cc .cc_tel{
+  font-family: 'Montserrat',sans-serif;
+  font-size: 24px;
+  color: rgba(255,255,255,0.5);
+}
+.foot_btm .btn_kakao{
+  display: inline-block;
+  width: 155px;
+  height: 32px;
+  margin-top: 15px;
+  color: #dfdfdf;
+  text-align: center;
+  border: 1px solid #878787;
+  background: #4a4a4a;
+  border-radius: 6px;
+  align-content: center;
+}
+.foot_btm .btn_kakao::after{
+  display: inline-block;
+  content: "";
+  width: 9px;
+  height: 5px;
+  margin: 0 0 2px 5px;
+  background: url("https://www.monami.com/images/common/family_arr.png") no-repeat;
+  background-size: cover;
+  transform: rotate(-450deg);
+}
+.foot_btm .fam_site{
+  float: right;
+  position: relative;
+  width: 242px;
+  height: 34px;
+  text-align: left;
+  border: 1px solid rgba(255,255,255,0.3);
+  border-radius: 5px;
+}
+.foot_btm .fam_site>a{
+  display: block;
+  padding: 0 13px;
+  height: 34px;
+  line-height: 34px;
+  font-size: 13px;
+  color: rgba(255,255,255,0.4);
+  position: relative;
+}
+.foot_btm .fam_site::after{
+  display: block;
+  content: "";
+  width: 9px;
+  height: 5px;
+  margin: 0 0 2px 5px;
+  background: url("https://www.monami.com/images/common/family_arr.png") no-repeat;
+  background-size: contain;
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%) rotate(180deg);
+}
+.foot_btm::after{
+  display: block;
+  content: "";
+  clear: both;
+}
+.foot::after{
+  display: block;
+  content: "";
+  clear: both;
+} 
