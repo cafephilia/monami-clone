@@ -87,6 +87,7 @@ main .main-section{
 }
 main .background-image {
   background: url(https://www.monami.com/images/main/visual1.jpg) no-repeat; 
+
   width: 100%;
 }
 main .main-section .background-image .background-image-textarea {
