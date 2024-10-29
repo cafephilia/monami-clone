@@ -357,6 +357,11 @@ main section.contact .traffic .guide-text ul li {
     display: flex;
     background: url("https://www.monami.com/images/page/list_bg1.gif") no-repeat left 11px;
 }
+main section.contact .traffic #car .guide-text {  
+    height: 50%;git 
+    display: flex;
+    align-items: center;
+}
 main #btn-top {  
     position: fixed;
     right: 3%;
