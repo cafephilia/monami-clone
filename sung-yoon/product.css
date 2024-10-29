@@ -11,6 +11,7 @@ body header{
   left: 0;
   right: 0;
   background: #fff;
+  z-index: 1000;
 }
 header .head{
   border-bottom: 1px solid #eaeaea;
@@ -19,7 +20,7 @@ header .head{
   height: 58px;
   border-bottom: 1px solid #eaeaea;
 }
-.head_top .conwrap{
+.conwrap{
   min-width: 1400px;
   width: 94%;
   margin: 0 auto;
@@ -37,7 +38,7 @@ header .head{
   z-index: 100;
   float: left;
   width: 86px;
-  height: 21px;
+  height: 30px;
   padding-top: 7px;
   overflow: hidden;
   border: 1px solid #eaeaea;
@@ -49,9 +50,10 @@ header .head{
 }
 .head_top .links .lang a{
   display: block;
-  width: 38px;
+  width: 52px;
   padding-left: 15px;
   font-family: 'Montserrat',sans-serif;
+  font-size: 11px;
   color: #000;
   background: url("https://www.monami.com/images/common/lang_arr.gif") no-repeat right center;
 }
@@ -93,6 +95,104 @@ header .head{
   content: "";
   clear: both;
 }
+.head .gnb{
+  min-width: 1262px;
+  margin: 0 auto;
+}
+.head .gnb h1{
+  float: none;
+  width: 162px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.head .gnb .nav{
+  float: none;
+  margin: 0 auto;
+  width: calc(100% - 162px - 66px);
+  display: flex;
+  justify-content: space-between;
+  
+}
+.head .gnb .nav>ul{
+  position: relative;
+  text-align: center;
+  width: 100%;
+  
+}
+.head .gnb .nav>ul:before{
+  content: "";
+  width: calc(100% + 450px + 450px);
+  height: 425px;
+  position: absolute;
+  left: -450px;
+  top: 89px;
+  visibility: hidden;
+  opacity: 0;
+  background: rgba(255,255,255,0.95);
+  border-bottom: 1px solid #e8e8e8;
+  border-top: 1px solid #e8e8e8;
+}
+.head .gnb .nav>ul li{
+  display: inline-block;
+  vertical-align: top;
+  width: calc(100%/7);
+  height: 89px;
+  line-height: 89px;
+  font-size: 17px;
+  color: #303030;
+  position: relative;
+}
+.head .gnb .nav>ul li>a{
+  display: block;
+  height: 89px;
+  line-height: 89px;
+  font-size: 17px;
+  color: #303030;
+}
+.head .gnb .search{
+  float: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 162px;
+}
+.head .gnb .search .btn_all{
+  float: right;
+  overflow: hidden;
+  width: 19px;
+  height: 16px;
+  margin-top: 36px;
+  cursor: pointer;
+}
+.head .gnb .search .btn_all>div{
+  width: 100%;
+  height: 2px;
+  margin-bottom: 5px;
+  background: #303030;
+}
+.head .gnb .search .nav_search{
+  overflow: hidden;
+  float: right;
+  text-align: right;
+  margin-right: 18px;
+  margin-top: 36px;
+}
+.head .gnb .search .nav_search a{
+  float: right;
+}
+.head .gnb .search .nav_search input{
+  float: right;
+  width: 0;
+  border: 0;
+  outline: 0;
+  margin-left: 10px;
+}
+
+
+
+
+
 
 /* =========main================== */
 main .mainhead{
