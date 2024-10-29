@@ -1,7 +1,7 @@
 
 header{  
 
- padding: 20px 200px 0 200px;
+ padding: 20px 250px 0px 250px;
  position: fixed;
  top: 0;
  right: 0;
@@ -18,12 +18,13 @@ header .header-top .header-top-left{
 }
 
 header .header-top select{
+  width: 70px;
   border: none;
   font-size: 12px;
 }
 header .header-top .language-line{
   
-  padding: 10px;
+  padding: 5px;
   border: 0.5px solid #eaeaea;
   border-radius: 10px;
 }
@@ -56,12 +57,13 @@ header .header-bottom {
 header .header-bottom .logo{
   
   width: 15%;
+
 }
 header .header-bottom nav {
   font-size: 17px;
   font-weight: 500;
-  width: 70%;
-  padding-top: 40px;
+  width: 75%;
+  padding-top: 30px;
 }
 header .header-bottom nav ul{
   display: flex;
@@ -71,10 +73,9 @@ header .header-bottom nav ul{
 header .header-bottom .icons{
   display: flex;
   width: 5%;
+  padding-top: 30px;
+  justify-content: space-around;
   
-  
-  padding-top: 40px;
-  justify-content: space-between;
 }
 
 
@@ -489,7 +490,7 @@ footer{
   height: 300px;
   display: flex;
   flex-direction: column;
-  padding: 50px 200px 50px 200px;
+  padding: 50px 250px 50px 250px;
 }
 footer .footer-top{
   display: flex;
@@ -503,7 +504,7 @@ footer .footer-top .rules{
   height: 14px;
   display: flex;
   color: #7d7d7d;
-  font-size: 12px;
+  font-size: 13px;
   
 }
 footer .footer-top .rules li{
@@ -577,6 +578,7 @@ background: #4a4a4a;
 footer .family-site{
   width: 40%;
   text-align: right;
+  
 }
 footer .family-site select{
   width: 250px;
@@ -585,7 +587,5 @@ footer .family-site select{
   color:rgba(255, 255, 255, 0.4);
   border: 1px solid rgba(255, 255, 255, 0.4);
   border-radius: 5px;
-}
-footer .family-site select option{
-  margin-left: 100px ;
+  padding-left: 10px;
 }
